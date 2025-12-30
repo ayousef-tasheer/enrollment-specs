@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
   s.name             = 'Enrollment'
   s.version          = '0.1.0'
@@ -13,8 +12,9 @@ Pod::Spec.new do |s|
   s.authors          = { 'Abdallah Essam Shaban' => 'ashaban@tasheer.com' }
 
   # For local development, keep s.source, but it's ignored when using :path in Podfile.
+ 
   s.source = {
-  :http   => 'https://tasheer-my.sharepoint.com/personal/ashaban_tasheer_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fashaban%5Ftasheer%5Fcom%2FDocuments%2FEnrollment%2Ezip',
+  :http   => 'https://drive.usercontent.google.com/download?id=1Q6lVVpQdLZ_5QxyTTxwd9Sg9xeb-Q3Fo&export=download&authuser=0&confirm=t&uuid=c19b74c2-3415-4466-a2dc-fdb109e31c75&at=ANTm3cyaPjZDjgfTOUVs3m3XKViQ:1767091877829',
   :type   => 'zip'               # <-- tell CocoaPods it's a ZIP
   }
 
@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
   # Prebuilt binary & resources
   s.vendored_frameworks = [
     'Enrollment/Frameworks/TasheerEnrollment.xcframework',
-    'Enrollment/Frameworks/aaPrintScannerFw.framework',
-    'Enrollment/Frameworks/aaPrintScannerLic.framework'
+    # 'Enrollment/Frameworks/aaPrintScannerFw.framework',
+    # 'Enrollment/Frameworks/aaPrintScannerLic.framework'
   ]
 
   s.resources = [
-    'Enrollment/Resources/TasheerEnrollmentResources.bundle'
+    'Enrollment/Frameworks/TasheerEnrollmentResources.bundle'
   ]
 
   # Uncomment if you want static linkage
