@@ -14,9 +14,8 @@ Pod::Spec.new do |s|
   # For local development, keep s.source, but it's ignored when using :path in Podfile.
  
   s.source = {
-  :http   => 'https://drive.usercontent.google.com/download?id=1Q6lVVpQdLZ_5QxyTTxwd9Sg9xeb-Q3Fo&export=download&authuser=0&confirm=t&uuid=c19b74c2-3415-4466-a2dc-fdb109e31c75&at=ANTm3cyaPjZDjgfTOUVs3m3XKViQ:1767091877829',
-  :type   => 'zip'               # <-- tell CocoaPods it's a ZIP
-  }
+  :http   => 'https://drive.usercontent.google.com/download?id=1Q6lVVpQdLZ_5QxyTTxwd9Sg9xeb-Q3Fo&export=download&authuser=0&confirm=t&uuid=c19b74c2-3415-4466-a2dc-fdb109e31c75&at=ANTm3cyaPjZDjgfTOUVs3m3XKViQ:1767091877829'  
+}
 
   s.ios.deployment_target = '12.0'
   s.swift_version    = '5.0'
