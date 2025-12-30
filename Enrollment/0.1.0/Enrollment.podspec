@@ -13,8 +13,9 @@ Pod::Spec.new do |s|
   s.authors          = { 'Abdallah Essam Shaban' => 'ashaban@tasheer.com' }
 
   # For local development, keep s.source, but it's ignored when using :path in Podfile.
-  s.source           = {
-    :http   => 'https://tasheer-my.sharepoint.com/personal/ashaban_tasheer_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fashaban%5Ftasheer%5Fcom%2FDocuments%2FEnrollment%2Ezip'
+  s.source = {
+  :http   => 'https://tasheer-my.sharepoint.com/personal/ashaban_tasheer_com/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fashaban%5Ftasheer%5Fcom%2FDocuments%2FEnrollment%2Ezip',
+  :type   => 'zip'               # <-- tell CocoaPods it's a ZIP
   }
 
   s.ios.deployment_target = '12.0'
